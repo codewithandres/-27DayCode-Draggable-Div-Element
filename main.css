@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --ff-mulish: "Mulish", sans-serif;
+    --gradient-bg: radial-gradient(hwb(240 5% 91%), hsl(252, 100%, 2%));
+    --color-text: hsl(0, 3%, 85%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-mulish);
+}
+
+body {
+    min-height: 100vh;
+    background: var(--gradient-bg);
+    color: var(--color-text);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.wrappper {
+    position: relative;
+    width: 400px;
+    color: hwb(240 5% 91%);
+    background-color: var(--color-text);
+    /* padding: 10px; */
+    border-radius: .5em;
+    /* transform: scale(1.4); */
+}
+
+.wrappper header.active {
+    user-select: none;
+    cursor: move;
+}
+
+.wrappper header {
+    font-size: 2rem;
+    padding: 17px 20px;
+    border-bottom: 1px solid hsl(0, 2%, 17%);
+}
+
+.wrappper .content {
+    margin: 30px 30px 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon {
+    font-size: 5rem;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.content p {
+    font-weight: 600;
+}
